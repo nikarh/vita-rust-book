@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Introduction - Rust on Sony PlayStation Vita Book</title>
+        <title>Development - Rust on Sony PlayStation Vita Book</title>
 
 
         <!-- Custom HTML head -->
@@ -12,21 +12,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -35,7 +35,7 @@
     <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html" class="active">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Development guide</li><li class="chapter-item expanded "><a href="getting_started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="build/index.html"><strong aria-hidden="true">2.</strong> Building</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="build/optimizations.html"><strong aria-hidden="true">2.1.</strong> Optimizations</a></li><li class="chapter-item expanded "><a href="build/linking.html"><strong aria-hidden="true">2.2.</strong> Linking native dependencies</a></li><li class="chapter-item expanded "><a href="build/ci.html"><strong aria-hidden="true">2.3.</strong> Building in a CI pipeline</a></li></ol></li><li class="chapter-item expanded "><a href="dev/index.html"><strong aria-hidden="true">3.</strong> Development</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="dev/mem.html"><strong aria-hidden="true">3.1.</strong> Memory</a></li><li class="chapter-item expanded "><a href="dev/net.html"><strong aria-hidden="true">3.2.</strong> Network</a></li><li class="chapter-item expanded "><a href="dev/graphics.html"><strong aria-hidden="true">3.3.</strong> Graphics</a></li></ol></li><li class="chapter-item expanded "><a href="running.html"><strong aria-hidden="true">4.</strong> Running</a></li><li class="chapter-item expanded "><a href="unsupported_features.html"><strong aria-hidden="true">5.</strong> Unsupported features</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Development guide</li><li class="chapter-item expanded "><a href="../getting_started.html"><strong aria-hidden="true">1.</strong> Getting Started</a></li><li class="chapter-item expanded "><a href="../build/index.html"><strong aria-hidden="true">2.</strong> Building</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../build/optimizations.html"><strong aria-hidden="true">2.1.</strong> Optimizations</a></li><li class="chapter-item expanded "><a href="../build/linking.html"><strong aria-hidden="true">2.2.</strong> Linking native dependencies</a></li><li class="chapter-item expanded "><a href="../build/ci.html"><strong aria-hidden="true">2.3.</strong> Building in a CI pipeline</a></li></ol></li><li class="chapter-item expanded "><a href="../dev/index.html" class="active"><strong aria-hidden="true">3.</strong> Development</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../dev/mem.html"><strong aria-hidden="true">3.1.</strong> Memory</a></li><li class="chapter-item expanded "><a href="../dev/net.html"><strong aria-hidden="true">3.2.</strong> Network</a></li><li class="chapter-item expanded "><a href="../dev/graphics.html"><strong aria-hidden="true">3.3.</strong> Graphics</a></li></ol></li><li class="chapter-item expanded "><a href="../running.html"><strong aria-hidden="true">4.</strong> Running</a></li><li class="chapter-item expanded "><a href="../unsupported_features.html"><strong aria-hidden="true">5.</strong> Unsupported features</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -142,7 +142,7 @@
                     <h1 class="menu-title">Rust on Sony PlayStation Vita Book</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
 
@@ -171,18 +171,20 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p>Welcome to the Rust on Sony PlayStation Vita Book: An introductory book about using the Rust Programming Language on Sony PlayStation Vita.</p>
-<p>Here you can find guidelines on how to start making applications for Sony PlayStation Vita in Rust with std using open source <a href="https://vitasdk.org/">Vita SDK</a> homebrew toolchain.</p>
-<h2 id="considerations"><a class="header" href="#considerations">Considerations</a></h2>
-<p>Though it's technically possible to run nostd applications written in pure Rust on Vita (without any additional toolchains), this book focuses on running applications with std. Rust std for Vita target is implemented via <a href="https://github.com/vitasdk/newlib">newlib</a>, and relies on the <a href="https://vitasdk.org/">Vita SDK</a> toolchain - patched <code>gcc</code> compiler, patched <code>binutils</code>, as well as a number of CLI tools that allow converting an armv7 elf into an artifact runnable on Vita. </p>
+                        <h1 id="development"><a class="header" href="#development">Development</a></h1>
+<p>To support platform dependent aspects of your application, such as input, audio and graphics, you will have to use User and Kernel functions exported by Vita modules.
+These functions become available when linking against the appropriate stubs provided by <a href="https://vitasdk.org/">Vita SDK</a>. The descriptions of the exported data structures and functions can be found in <a href="https://docs.vitasdk.org/">Vita SDK docs</a>.</p>
+<p>To use them in Rust, you must use <a href="https://crates.io/crates/vitasdk-sys">vitasdk-sys</a>. This crate uses <a href="https://github.com/rust-lang/rust-bindgen">bindgen</a> to generate Rust bindings from C headers. The exported functions are grouped by their stubs and become available after enabling the corresponding feature in <a href="https://crates.io/crates/vitasdk-sys">vitasdk-sys</a>. The documentation can be found in <a href="https://docs.rs/vitasdk-sys/0.3.2/vitasdk_sys/">vitasdk-sys docs</a>. </p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../build/ci.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
-                            <a rel="next prefetch" href="getting_started.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../dev/mem.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -192,8 +194,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../build/ci.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
-                    <a rel="next prefetch" href="getting_started.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../dev/mem.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -208,13 +213,13 @@
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
 
