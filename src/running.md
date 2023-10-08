@@ -24,7 +24,6 @@ After installing the emulator and setting it up correctly, installing and runnin
 vita3k -d RUST00001
 # Installs the vpk and runs it
 vita3k ./target/armv7-sony-vita-newlibeabihf/release/your_app.vpk
-
 ```
 
 Keep in mind that an emulator is not a real device, and some programs that would work on real hardware won't work in an emulator, and vice versa.

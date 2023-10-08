@@ -8,3 +8,7 @@ publish = false
 doc-comment = "0.3.3"
 libc = "0.2.149"
 vitasdk-sys = { version = "0.3.2", features = ["SceDisplay_stub", "SceSysmem_stub", "SceKernelDmacMgr_stub", "SceGxm_stub"] }
+
+[build-dependencies]
+bindgen = { version = "0.68.1", features = ["static"], default-features = false }
+clang-sys = { version = "1", features = ["clang_6_0", "static"], default-features = false }

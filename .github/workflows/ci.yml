@@ -23,7 +23,8 @@ jobs:
       - name: Compile code samples
         working-directory: ./tests
         run: |
-          apk add --no-cache libc6-compat;
+          apk del clang llvm
+          apk add --no-cache clang-static llvm-static;
           if ! cargo vita build vpk --release --tests; then
             echo "Build failed with exit code $?";
             exit 1;

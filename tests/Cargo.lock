@@ -421,6 +421,7 @@ dependencies = [
 name = "tests"
 version = "0.1.0"
 dependencies = [
+ "bindgen",
  "doc-comment",
  "libc",
  "vitasdk-sys",
