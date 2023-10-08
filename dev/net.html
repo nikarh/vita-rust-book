@@ -221,13 +221,13 @@ The certificate file is located on the filesystem on <code>vs0:data/external/cer
 <p>You can use <a href="https://github.com/rustls/rustls">rustls</a> with <a href="https://github.com/rustls/webpki-roots">webpki-roots</a> crate to provide CA certificates. The certificates will be then bundled inside of your binary.</p>
 </li>
 <li>
-<p>Use either <a href="https://github.com/rustls/rustls">rustls</a> with <a href="https://github.com/rustls/rustls-native-certs">rustls-native-certs</a> or <a href="https://github.com/sfackler/rust-native-tls">native-tls</a> crate for OpenSSL implementation. In both the scenarios you application will try to find CA certificated provided by the operating system.</p>
+<p>Use either <a href="https://github.com/rustls/rustls">rustls</a> with <a href="https://github.com/rustls/rustls-native-certs">rustls-native-certs</a> or <a href="https://github.com/sfackler/rust-native-tls">native-tls</a> crate for OpenSSL implementation. In both the scenarios your application will try to find CA certificated provided by the operating system.</p>
 <p>You will have to set a <code>SSL_CERT_FILE</code> environment variable in your code:</p>
 <pre><pre class="playground"><code class="language-rust edition2021">fn main() {
     std::env::set_var(&quot;SSL_CERT_FILE&quot;, &quot;vs0:data/external/cert/CA_LIST.cer&quot;);
     // ... your code
 }</code></pre></pre>
-<p>as well as make you application unsafe in order for it to have access to the <code>vs0</code> partition. To do that add the following to your <code>Cargo.toml</code></p>
+<p>as well as make your application unsafe in order for it to have access to the <code>vs0</code> partition. To do that add the following to your <code>Cargo.toml</code></p>
 <pre><code class="language-toml">[package.metadata.vita]
 # ...
 # This disables safe mode (default -s flag) for reading OpenSSl certs
